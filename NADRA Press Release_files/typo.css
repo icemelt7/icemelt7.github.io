@@ -1,0 +1,39 @@
+/* Tips, Error, Message, Hightlight*/
+.error {
+	padding: 5px 5px 5px 25px;
+	color: #CF3020;
+	background: url(../images/typo/bullet-error.gif) no-repeat center left;
+}
+
+.message {
+	padding: 5px 5px 5px 25px;
+	color: #16A9CD;
+	background: url(../images/typo/bullet-info.gif) no-repeat center left;
+}
+
+.tips {
+	padding: 5px 5px 5px 25px;
+	color: #DF8A00;
+	background: url(../images/typo/bullet-tips.gif) no-repeat center left;
+}
+
+.highlight {
+	border: 1px dotted #9AA6AA;
+	padding: 0 5px;
+	background: #FFFFF0;
+	font-weight: bold;
+}
+
+/* Quote */
+blockquote {
+	margin: 15px 0;
+	padding: 10px 40px 10px 60px;
+	background: url(../images/typo/quote.gif) 15px 5px no-repeat;
+	font: italic 15px Georgia, Times, serif;
+}
+
+div.blockquote {
+	margin: 0;
+	padding: 0;
+	background: url(../images/typo/quote-right.gif) no-repeat bottom right;
+}
