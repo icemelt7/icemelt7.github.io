@@ -1,0 +1,169 @@
+/* CSS Document */
+#nav h3{display:none}
+#nav {
+	position:absolute;
+	top:8px;
+	margin:0; /* all lists */
+	padding: 0;
+	text-align:left;
+	width:900px;
+ /* background: #999999;  */
+}
+
+#nav ul {
+	margin: 0; /* all lists */
+	padding: 0;
+}
+#nav li.active a{  
+	background:url(../images/suckerfish_activ.gif) no-repeat 52% top;
+       
+}
+
+#nav li {
+	margin: 0; /* all list items */
+	padding: 0;
+	float: left;
+	display: block;
+	background: none;
+	background: url(../images/suckerfish_divider.gif) no-repeat 100% 10px;
+	cursor: pointer;
+
+}
+
+#nav li ul {
+	width: 16.4em;
+	position: absolute; /* second-level lists */
+	z-index: 99;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	height: auto;
+	width: 15.9em;
+}
+
+#nav li ul ul {
+	margin: -2em 0 0 15em; /* third-and-above-level lists */
+}
+
+#nav li li {
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 14.9em;
+}
+
+#nav ul a {
+	width: auto;
+
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul,
+#nav li.sfhover ul ul, #nav li.havechildsfhover ul ul, #nav li.havechild-activesfhover ul ul, #nav li.activesfhover ul ul,
+#nav li.sfhover ul ul ul, #nav li.havechildsfhover ul ul ul, #nav li.havechild-activesfhover ul ul ul, #nav li.activesfhover ul ul ul {
+	left: -999em;
+}
+
+/* This "unhides" the sub-menus (left: -999em is what hides them) */
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul,
+#nav li.sfhover ul, #nav li.havechildsfhover ul, #nav li.havechild-activesfhover ul, #nav li.activesfhover ul,
+#nav li li.sfhover ul, #nav li li.havesubchildsfhover ul, #nav li li.havesubchild-activesfhover ul, #nav li li.activesfhover ul,
+#nav li li li.sfhover ul, #nav li li li.havesubchildsfhover ul, #nav li li li.havesubchild-activesfhover ul, #nav li li li.activesfhover ul {
+	left: auto;
+}
+
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#nav li a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 4px 20px 0;
+	color: #666;
+}
+
+#nav li a:hover,
+#nav li a:active,
+#nav li a:focus {
+	color: #333;
+
+}
+
+#nav li:hover a,
+#nav li.sfhover a,
+#nav li.havechildsfhover a,
+#nav li.havechild-activesfhover a {
+	color: #333;
+	background:url(../images/suckerfish_activ.gif) no-repeat 52% top;
+}
+#nav ul li .active,
+#nav li a.active,
+#nav li a.active:hover,
+#nav li a.active:active,
+#nav li a.active:focus {
+	color: #333 !important;
+	background:none;
+
+}
+
+/* 2nd level and above */
+#nav li ul {
+	border: 1px solid #f3f3f3;
+	border-top: 0;
+	background: #fff;
+}
+
+#nav li ul ul {
+	border: 1px solid #f9f9f9;
+}
+
+#nav li ul li {
+	border-bottom: 1px solid #f2f2f2;
+	border-right: none;
+	background: none;
+}
+
+#nav li ul a {
+	border-right: none;
+	margin: 0;
+	padding: 8px 10px;
+	line-height: normal;
+	height: auto;
+	background: none !important;
+	color: #333 !important;
+}
+#nav li.havesubchild,
+#nav li.havesubchild-active {
+	background: url(../images/arrow.png) no-repeat 94% 50%;
+}
+
+
+#nav li ul a:hover,
+#nav li ul a:active,
+#nav li ul a:focus,
+/*#nav ul li:hover,
+#nav ul li.sfhover,*/
+#nav ul li.havesubchildsfhover,
+#nav ul li.havesubchild-activesfhover,
+#nav ul ul li:hover,
+#nav ul ul li.sfhover,
+#nav ul ul li.havesubchildsfhover,
+#nav ul ul li.havesubchild-activesfhover {
+	background: #f9f9f9;
+	color: #666 !important;
+}
+
+#nav ul li a.active {
+	background:url(../images/suckerfish_activ.gif) no-repeat center top;
+	color: #666 !important;
+}
+
+#nav ul li a.active:hover,
+#nav ul li a.active:active,
+#nav ul li a.active:focus {
+	color: #666 !important;
+	background:url(../images/suckerfish_activ.gif) no-repeat center top;
+}
+#nav li ul a:hover,
+#nav li ul a:active,
+#nav li ul a:focus{
+	color: #666;
+	background:url(../images/suckerfish_activ.gif) no-repeat center top;
+}

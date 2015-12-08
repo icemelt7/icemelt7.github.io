@@ -1,0 +1,859 @@
+/* COMMON STYLE
+--------------------------------------------------------- */
+
+body {
+	color:#777;
+	font-size:12px;
+	background:#f9f9f9  ;
+	font-family: Tahoma, Arial, sans-serif;
+	height:100%;
+	text-align:center; /* Zentrierung IE5+*/
+}
+
+html, body, form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+body.contentpane {
+	width: auto; /* Printable Page */
+	margin: 1em 2em;
+	line-height: 1.3em;
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	color: #333;
+}
+* html .clearfix {
+	height: 1%;
+}
+
+/* Normal link */
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #999;
+	text-decoration: underline;
+}
+
+/* Title text */
+.contentheading, .componentheading, .blog_more strong, h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Small text */
+small, .small, .smalldark, .mosimage_caption, .createby, .createdate, .modifydate, a.readon, .img_caption {
+	color: #999;
+	font-size: 90%;
+}
+
+/* Heading */
+h1 {
+	font-size: 180%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+h4 {
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+p, pre, blockquote, ul, ol, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+#right{
+line-height:1.4;
+}
+#content{
+line-height:1.6;
+}
+.module_drag ul,
+#content ul,
+#right ul {
+	list-style: none;
+}
+.module_drag ul li,
+#content ul li,
+#right ul li {
+	padding-left: 16px;
+	background: url(../images/bullet-list.gif) no-repeat 6px 8px;
+	line-height: 160%;
+}
+#content ol li,
+#right ol li {
+	margin-left: 15px;
+	line-height: 180%;
+}
+
+th {
+	padding: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+fieldset a {
+	font-weight: bold;
+}
+
+hr {
+	border-top: 1px solid #CCCCCC;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+	height: 1px;
+}
+
+td, div {
+	font-size: 100%;
+}
+
+img {
+	border: none;
+}
+
+/* Default Joomla! Menu */
+/* BASIC JOOMLA MENU 
+--------------------------------------------------------- */
+a.mainlevel {
+padding:4px 0 4px 3px;
+width:100%;
+display:block;
+color:#666;
+text-decoration:none;
+background:url(../images/sep.gif) repeat-x bottom left;
+}
+
+a.mainlevel:hover,a.mainlevel:active{
+color:#333;
+background:url(../images/sep.gif) repeat-x bottom left #f9f9f9;
+text-decoration:none;
+}
+a.mainlevel:visited {
+color:#666;
+text-decoration:none;
+}
+
+a.mainlevel#active_menu {
+color:#999;
+background:url(../images/sep.gif) repeat-x bottom #f9f9f9;
+font-weight:bold;
+text-decoration:none;
+}
+
+a.sublevel {
+padding:2px 4px 2px 15px;
+display:block;
+color:#666;
+background:url(../images/arrow.png) no-repeat 4px 8px;
+text-decoration:none;
+}
+
+a.sublevel:hover,a.sublevel:active,a.sublevel:focus {
+color:#333;
+text-decoration:none;
+}
+
+#active_menu {
+background:url(../images/arrow.png) no-repeat 4px 8px;
+color:#666;
+font-weight:bold;
+}
+
+/* BASIC JOOMLA MENU WITH _menu as suffix
+--------------------------------------------------------- */
+/* Default Joomla! Menu */
+#right div.module_menu ul li,
+#left div.module_menu ul li{
+	background:none;
+	background: url(../images/sep.gif) repeat-x bottom;
+	padding-left:0;
+}
+#right ul.menu,
+#left ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+#right ul.menu li,
+#left ul.menu li {
+	background: none;
+	margin: 0;
+	padding: 1px 0;
+	text-indent:4px;
+}
+#right ul.menu li a,
+#left ul.menu li a {
+	display: block;
+	outline: none;
+	padding: 5px 0px;
+	color: #333;
+	text-decoration: none;
+}
+
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	color: #222;
+	background: #f9f9f9;
+}
+#right ul.menu li.active a
+#left ul.menu li.active a {
+	background: #f9f9f9;
+	font-weight: bold;
+}
+
+ul.menu li ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li li {
+	border: none;
+}
+
+ul.menu li li a {
+	background: url(../images/arrow.png) no-repeat 8px 12px !important;
+	border: none;
+	font-weight: normal !important;
+	padding-left: 16px !important;
+	width: 75%; /*need for ie6*/
+}
+
+ul.menu li li a:hover,
+ul.menu li li a:active,
+ul.menu li li a:focus {
+	background: none;
+	color: #ccc;
+}
+
+
+/* TOPMENU - JOOMLA STYLE WITH SUFFIX -nav
+--------------------------------------------------------- */
+#topmenu h3
+{
+  display:none;
+}
+
+#topmenu #mainlevel-nav
+{
+  list-style:none;
+  float:left;
+  white-space:nowrap;
+  font-size:11px;
+  margin:0;
+  padding:0;
+}
+
+#topmenu #mainlevel-nav li
+{
+  width:auto!important;
+  float:left;
+  white-space:nowrap;
+  font-size:11px;
+  margin:0 3px 0 0;
+}
+
+#topmenu #mainlevel-nav li a
+{
+  color:#999;
+  display:block;
+  padding-left:8px;
+  padding-right:8px;
+  text-decoration:none;
+  white-space:nowrap;
+  font-size:11px;
+  border-left:1px solid #999;
+}
+
+#topmenu #mainlevel-nav li a:hover
+{
+  display:block;
+  padding-left:8px;
+  padding-right:8px;
+  white-space:nowrap;
+  text-decoration:none;
+  color:#666;
+  font-size:11px;
+}
+
+
+
+/* FORM
+--------------------------------------------------------- */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form label {
+	cursor: pointer;
+}
+
+input, select, textarea, .inputbox {
+	padding: 3px 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+.button {
+	padding: 1px 5px 1px 5px;
+	padding-right: 5px;
+	border: 1px solid #ccc;
+	background: #222;
+	color: #777;
+	font-size: 85%;
+	text-transform: uppercase;
+	background: url(../images/button_bg.gif) repeat-x;
+
+}
+
+.button:hover, .button:focus {
+	border: 1px solid #999999;
+	color: #333;
+}
+
+* html .button {
+	padding: 2px 0 !important; /*IE 6*/
+}
+
+*+html .button {
+	padding: 1px 5px 1px 5px !important; /*IE 7*/
+}
+
+.inputbox {
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+}
+
+.inputbox:hover, .inputbox:focus {
+	background: #FFFFCC;
+}
+/* JOOMLA STYLE
+--------------------------------------------------------- */
+table.blog {
+}
+
+.article_separator {
+	clear: both;
+	display: block;
+	height: 20px;
+}
+
+.article_column {
+}
+
+.column_separator {
+	padding: 0 10px;
+}
+
+/* content tables */
+td.sectiontableheader {
+  padding: 4px;
+  border-right: 1px solid #ccc;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+  padding: 4px;
+}
+
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 3px;
+}
+
+table.contentpane {
+	border: none;
+	width: 100%;
+}
+
+table.contentpaneopen {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.contenttoc {
+	margin: 0 0 10px 10px;
+	padding: 0;
+	width: 35%;
+	float: right;
+}
+
+table.contenttoc a {
+	text-decoration: none;
+}
+
+table.contenttoc td {
+	padding: 1px 5px 1px 25px;
+	background: url(../images/bullet-list.gif) no-repeat 5% 50%;
+}
+
+table.contenttoc th {
+	padding: 0 0 3PX;
+	border-bottom: 1px solid #ccc;
+	text-indent: 5px;
+}
+
+table.poll {
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.pollstableborder {
+	padding: 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+}
+
+table.pollstableborder img {
+	vertical-align: baseline;
+}
+
+table.pollstableborder td {
+	padding: 4px!important;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.pollstableborder tr.sectiontableentry1 td {
+	background: #f9f9f9;
+}
+
+table.searchintro {
+	padding: 10px 0;
+	width: 100%;
+}
+
+table.searchintro td {
+	padding: 5px!important;
+}
+
+table.adminform {
+}
+
+.adminform .inputbox {
+}
+
+.blog_more {
+	padding: 10px 0;
+	background: url(../images/sep.gif) repeat-x top;
+}
+
+.blog_more strong {
+	margin: 0 0 5px;
+	display: block;
+	font-size: 125%;
+}
+
+.blog_more ul {
+	margin: 0;
+	padding: 0;
+}
+
+.blog_more ul li {
+	margin: 0;
+	padding: 0 0 0 17px;
+	background: url(../images/bullet.gif) no-repeat 6px 8px;
+}
+
+.category {
+	font-weight: bold;
+}
+
+h1.componentheading, .componentheading {
+  border-bottom:1px dotted #ccc;
+  color:#888;
+  font-size:160%;
+  font-weight:normal;
+  margin-bottom:4px;
+}
+
+.contentdescription {
+	padding-bottom: 20px;
+}
+
+h2.contentheading, .contentheading {
+  /*background: url(../images/sep.gif) repeat-x bottom;*/
+  color:#888;
+  font-size:170%;
+  font-weight:normal;
+}
+
+table.blog .contentheading {
+}
+
+
+a.contentpagetitle,
+a.contentpagetitle:hover,
+a.contentpagetitle:active,
+a.contentpagetitle:focus {
+	text-decoration: none !important;
+}
+
+a.readon {
+margin-top:4px;
+	padding: 4px 7px 2px 4px;
+	padding-left:24px;
+	color: #999;
+	font-size: 12px;
+	text-decoration:none;
+	background: url(../images/page_white_copy.png) no-repeat left;
+
+}
+
+a.readon:hover, a.readon:active, a.readon:focus {
+	color:#333;
+}
+
+table.contentpaneopen td, table.contentpane td {
+}
+
+table.contentpaneopen, table.contentpane, table.blog {
+	width: 100%;
+}
+
+.moduletable {
+	padding: 0;
+}
+
+ul.pagination {
+	margin: 15px auto;
+	padding: 10px 0;
+	background: url(../images/dot.gif) repeat-x top;
+}
+
+ul.pagination li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	background: none;
+}
+
+ul.pagination li span{
+	padding: 2px 5px;
+}
+
+ul.pagination a {
+	padding: 2px 5px;
+	border: 1px solid #ccc;
+}
+
+ul.pagination a:hover, ul.pagination a:active, ul.pagination a:focus {
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+}
+
+.pagenavbar {
+	padding-left: 0px;
+	color:#000;
+
+}
+
+.pagenavcounter {
+	padding: 8px 14px 0 0px;
+	font-weight:bold;
+}
+
+.sectiontableheader {
+	padding: 8px 5px;
+	background: #f9f9f9;
+	color: #999;
+	border-bottom:1px solid #e5e5e5;
+
+}
+
+.sectiontableheader a {
+	color: #666;
+}
+
+tr.sectiontableentry1 td {
+	padding: 8px 5px;
+	background:#f2f2f2;
+	border-bottom:1px solid #e5e5e5;
+}
+
+tr.sectiontableentry2 td {
+	padding: 8px 5px;
+	border-top:1px solid #fff;
+	background:#f9f9f9;
+}
+
+tr.sectiontableentry1:hover td,
+tr.sectiontableentry2:hover td {
+	background:#fff;
+
+}
+
+.smalldark {
+	text-align: left;
+}
+
+div.syndicate div {
+	text-align: center;
+}
+
+.pollstableborder tr.sectiontableentry1 td,
+.pollstableborder tr.sectiontableentry2 td {
+	background: none;
+}
+
+/* META
+--------------------------------------------------------- */
+.article-tools {
+	border-top: 1px solid #333;
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+	display: block;
+	background: #222;
+}
+
+.article-meta {
+	padding: 5px;
+	width: 80%;
+	float: left;
+}
+
+
+.modifydate {
+	width: 100%;
+	float: left;
+}
+
+div.buttonheading {
+	float: right;
+	width: 15%;
+}
+
+.buttonheading img {
+	margin: 7px 5px 0 0;
+	border: 0;
+	float: right;
+}
+
+
+/* MODULE
+--------------------------------------------------------- */
+div.moduletable,
+div.moduletable_menu,
+div.moduletable_text {
+	padding: 0 0 20px;
+	margin-bottom: 15px;
+	background: url(../images/dot.gif) repeat-x bottom;
+}
+
+div.moduletable h3,
+div.moduletable_menu h3,
+div.moduletable_text h3 {
+	padding: 0 0 8px;
+	margin: 0;
+	color: #333;
+	font-size: 125%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* MODULE FOR SLIDESHOW
+--------------------------------------------------------- */
+
+div.module_slideshow{
+	padding:0;
+	margin:0;
+}
+div.module_slideshow h3{
+	display:none}
+
+/* MODULE INSIDE THE SLIDESHOW WITH SUFFIX _absolute
+--------------------------------------------------------- */
+
+div.module_drag{
+position:absolute;
+top:0;
+left:400px;
+width:240px;
+text-align:left;
+padding:0;
+padding-left:10px;
+padding-right:10px;
+margin:0;
+height:100%;
+z-index:98;
+background: url(../images/white_trans.png);
+line-height:130%;
+cursor:move;
+overflow-y:hidden;
+}
+div.module_drag h3{
+  color:#999;
+  font-size:130%;
+  margin-top:10px;
+
+	}
+
+/* MODULE USER 1 2  
+--------------------------------------------------------- */
+#user_module div.module{
+	font-size:95%;
+	color:#999;
+	line-height:130%;
+	padding:10px;
+	background: url(../images/header_bg.gif) repeat-x top;
+	border:1px solid #e5e5e5;
+	margin:5px;
+	width:auto;
+	display:block;
+
+
+}
+#user_module_custom div.module{
+	font-size:95%;
+	color:#999;
+	line-height:130%;
+	padding:10px;
+	border:1px solid #e5e5e5;
+	margin:5px;
+	width:auto;
+	display:block;
+
+
+}
+#user_module div.module h3{
+  color:#999;
+  font-size:130%;
+  line-height:120%;
+  margin-bottom:4px;
+}
+
+/* MODULE RIGHT
+--------------------------------------------------------- */
+#right div.module_menu h3,
+#right div.module_text h3,
+#right div.module h3{
+  color:#888;
+  font-size:170%;
+  font-weight:normal;
+  margin-bottom:6px;
+  background: url(../images/sep.gif) repeat-x bottom;
+}
+#right div.module_menu,
+#right div.module_text,
+#right div.module{
+	font-size:95%;
+	padding-top:10px;
+	margin-bottom:20px;
+	color:#666;
+
+}
+
+div.back_button a,
+div.back_button a:hover,
+div.back_button a:active {
+	margin: 10px 0;
+	display: block;
+	background: none!important;
+	text-decoration: none!important;
+}
+
+#form-login p {
+	margin: 0 0 5px;
+	text-align:left;
+}
+
+#form-login ul {
+	margin: 10px 0 0;
+}
+
+#form-login .inputbox {
+	
+}
+#left .inputbox{
+background-color:#FFF;
+border:1px solid #ccc;
+color:#444;
+}
+
+/* Tooltips */
+.tool-tip {
+	float: left;
+	border: 1px solid #ccc;
+	padding: 8px;
+	background: #FFF;
+	max-width: 200px;
+
+}
+
+.tool-title {
+display:none;
+	padding: 0;
+	margin: 0;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 95%;
+	font-weight: bold;
+}
+
+.tool-text {
+	margin: 0;
+	font-size: 90%;
+	color:#999;
+	text-align:left;
+}
+
+#system-message dd.message ul,
+#system-message dd.error ul,
+#system-message dd.notice ul {
+	padding: 0;
+	margin: 0;
+}
+
+#system-message dd.message ul li,
+#system-message dd.error ul li,
+#system-message dd.notice ul li {
+	background: none;
+	padding: 5px;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+/* System Standard Messages */
+#system-message dd.message ul {
+	background: #006699;
+	border: none;
+}
+
+/* System Error Messages */
+#system-message dd.error ul {
+	background: #BF0000;
+	border: none;
+}
+
+/* System Notice Messages */
+#system-message dd.notice ul {
+	background: #EE9600;
+	border: none;
+}
